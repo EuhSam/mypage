@@ -80,10 +80,9 @@
             margin-top: 20px;
         }
 
-        .mybtn > button {
+        .mybtn>button {
             margin-right: 10px;
         }
-        
     </style>
 </head>
 
@@ -92,72 +91,89 @@
         <h1>내 생애 최고의 영화들!!!</h1>
         <button>영화 기록하기</button>
     </div>
+
     <div class="mypost">
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">영화URL</label>
         </div>
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">코멘트</label>
+
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>-- 선택하기 --</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
         </div>
-        <div class="mybtn">
-            <button type="button" class="btn btn-dark">기록하기</button>
-            <button type="button" class="btn btn-outline-dark">닫기</button>
-        </div>
-    </div>
-    <div class="mycards">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                    </div>
-                </div>
+
+        <div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">코멘트</label>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                        <p>⭐⭐⭐</p>
-                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                    </div>
-                </div>
+            <div class="mybtn">
+                <button type="button" class="btn btn-dark">기록하기</button>
+                <button type="button" class="btn btn-outline-dark">닫기</button>
             </div>
         </div>
     </div>
+
+        <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://img.movist.com/?img=/x00/04/84/38_p1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">라라랜드</h5>
+                            <p class="card-text">뮤지컬 로맨스 무비</p>
+                            <p>⭐</p>
+                            <p class="mycomment">몽상의 세계 속 댄스 마법</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://img.movist.com/?img=/x00/04/56/24_p1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">그랜드 부다페스트 호텔</h5>
+                            <p class="card-text">2014년 베를린 영화제 개막작</p>
+                            <p>⭐⭐</p>
+                            <p class="mycomment">제87회 아카데미 시상식을 휩쓸다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://img.movist.com/?img=/x00/00/01/28_p1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">중경삼림</h5>
+                            <p class="card-text">1994년 홍콩 느와르 무비의 혁명</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">느와르라는 레인코트 속 사랑놀이</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="http://img.movist.com/?img=/x00/05/19/10_p1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">탑건: 매버릭</h5>
+                            <p class="card-text">1986년 개봉한 탑건 36년만의 후속작</p>
+                            <p>⭐⭐⭐⭐</p>
+                            <p class="mycomment">톰 형은 늙어도 액션은 여전</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
